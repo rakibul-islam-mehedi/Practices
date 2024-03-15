@@ -37,10 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
         storageBtn.setOnClickListener(v -> {
 
+            //Get data from SharedPreference
             String name = sharedPreferences.getString("name", "Empty");
             int age = sharedPreferences.getInt("age", 0);
 
+            //Print in TextView
             tvDisplay.setText("Name: "+name +"\n Age: "+ age);
+
 
 
         });
