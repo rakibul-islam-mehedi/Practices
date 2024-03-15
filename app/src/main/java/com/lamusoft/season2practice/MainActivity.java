@@ -21,9 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         initialization();
-
         setClickListener();
     }
 
@@ -49,13 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-
     }
 
     private void initialization() {
         sharedPreferences = getSharedPreferences(getString(R.string.app_name), MODE_PRIVATE);
         editor = sharedPreferences.edit();
-
         edName = findViewById(R.id.edName);
         saveBtn = findViewById(R.id.saveBtn);
         storageBtn = findViewById(R.id.storageBtn);
